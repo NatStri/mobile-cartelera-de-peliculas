@@ -5,8 +5,8 @@ export default function HomeScreen() {
   return (
     <View>
         <View>
-          <Text style={styles.titulo}>Perfil de usuario</Text>
-      <SafeAreaView styles={styles.container}>
+          <Text style={style.titulo}>Perfil de usuario</Text>
+      <SafeAreaView style={style.container}>
           <Text>Username</Text>
           <Text>Name</Text>
       </SafeAreaView>
@@ -16,7 +16,7 @@ export default function HomeScreen() {
 }
 
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
   texto: {
     fontFamily: "Cochin",
     fontSize: 40,

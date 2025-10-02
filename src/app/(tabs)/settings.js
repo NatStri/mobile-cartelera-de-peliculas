@@ -5,8 +5,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function Tab() {
     return (
         <View>
-            <SafeAreaView styles={StyleSheet.container}>
-            <Text styles={StyleSheet.titulo}>Pagina de Settings</Text>
+            <SafeAreaView style={styles.container}>
+            <Text style={styles.titulo}>Pagina de Settings</Text>
             </SafeAreaView>
         </View>
     );

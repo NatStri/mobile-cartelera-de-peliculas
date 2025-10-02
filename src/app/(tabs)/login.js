@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Button, Text, View, Alert, TextInput, Link } from 'react-native';
 import React, { useState } from 'react';
 
-export default function app() {
+export default function LoginScreen() {
     const [text, onChangeText] = useState('');
     const [password, setPassword] = useState('');
 

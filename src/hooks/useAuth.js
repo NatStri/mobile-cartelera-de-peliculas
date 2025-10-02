@@ -1,6 +1,9 @@
 import { useState } from "react";
 import api from "../app/api/api.js";
+import { useRouter } from 'expo-router';
+
 export const useAuth = () => {
+    const router = useRouter();
     const [error, setError] = useState(null);
 
     const register = async (data) => {

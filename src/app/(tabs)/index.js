@@ -1,7 +1,7 @@
 import { FlatList, View, Text, StyleSheet } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { Link } from "expo-router";
-import usePokemons from "../../hooks/usePokemon";
+import usePeliculas from "../../hooks/usePeliculas.js";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
