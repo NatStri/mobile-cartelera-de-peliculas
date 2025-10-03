@@ -4,20 +4,13 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 export default function tabLayout() {
     return (
         <Tabs ScreenOptions={{ tabBarActiveBackgroundColor: 'blue',}}>
-            <Tabs.Screen name="settings"
+            <Tabs.Screen name="Listado de Peliculas"
                 options={{
-                    title: 'Settings',
+                    drawerLabel: 'Lista',
+                    title: 'Listado de Peliculas',
                     tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
                 }}
             />
-            <Tabs.Screen
-                name="home"
-                options={{
-                    title: 'Home',
-                    tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
-                }}
-            />
-
         </Tabs>
     )
 

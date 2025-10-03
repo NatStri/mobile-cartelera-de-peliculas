@@ -5,7 +5,7 @@ import usePeliculas from "../../hooks/usePeliculas.js";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
-  const { pokemons } = usePokemons(20);
+  const { peliculas } = usePeliculas(20);
 
   return (
     <View>
@@ -18,7 +18,7 @@ export default function App() {
 
 
       <FlatList
-        data={pokemons}
+        data={peliculas}
         keyExtractor={(item) => item.name}
         renderItem={({ item }) => <Text style={styles.item}>{item.name}</Text>}
       />
