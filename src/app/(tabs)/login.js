@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Button, Text, View, Alert, TextInput, Link } from 'react-native';
+import { StyleSheet, Button, Text, View, Alert, TextInput } from 'react-native';
+import { Link } from 'expo-router';
 import React, { useState } from 'react';
 
 export default function LoginScreen() {
@@ -44,31 +45,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     
   },
-    container1: {
-    flex: 8,
-    backgroundColor: '#c79fbcff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '20%',
-    width: '80%', 
-    margin: 12,
-    borderWidth: 0,
-    padding: 0,
-    borderColor: '#ba55c0',
-    borderRadius: 5,
-  },
+   container1: {
+        backgroundColor: '#c79fbcff',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 'auto',
+        width: '80%',
+        padding: 20,
+        borderRadius: 10,
+    },
     boldText: {
     fontWeight: 'bold',
     fontSize: 24, 
     marginBottom: 20, 
   },
-  input: {
-    height: 40,
-    width: '80%', 
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-    borderColor: '#ede6edff',
-    borderRadius: 5,
-  },
+    input: {
+        height: 40,
+        width: '100%',
+        marginVertical: 10,
+        borderWidth: 1,
+        padding: 10,
+        borderColor: '#ede6edff',
+        borderRadius: 5,
+        backgroundColor: '#ffffff'
+    },
 });
