@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import api from './api/api.js';
+import api from '../app/api/api.js';
 
 const usePeliculas = (showIds = []) => {
     const [peliculas, setPeliculas] = useState([]);

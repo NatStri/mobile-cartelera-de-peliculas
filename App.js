@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet, ActivityIndicator, SafeAreaView } from 'react-native';
-import usePeliculas from '../hooks/usePeliculas.js';
-import ShowCard from './components/ShowCard.js';
+import usePeliculas from './src/hooks/usePeliculas.js';
+import ShowCard from './src/app/components/ShowCard.js';
 
 const MOVIE_IDS = [
     82,
@@ -20,7 +20,7 @@ const MoviesListScreen = () => {
         return (
             <View style={styles.loadingContainer}>
                 <ActivityIndicator size="large" color="#0000ff" />
-                <Text>Cargando series por ID...</Text>
+                <Text>Cargando series..</Text>
             </View>
         );
     }
@@ -36,7 +36,7 @@ const MoviesListScreen = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Text style={styles.header}>Películas/Series por ID</Text>
+            <Text style={styles.header}>Películas/Series</Text>
             {peliculas.length > 0 ? (
                 <FlatList
                     data={peliculas}
@@ -46,7 +46,7 @@ const MoviesListScreen = () => {
                 />
             ) : (
                 <View style={styles.emptyContainer}>
-                    <Text>No se encontraron películas para los IDs especificados.</Text>
+                    <Text>No se encontraron películas.</Text>
                 </View>
             )}
         </SafeAreaView>
